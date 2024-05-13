@@ -2,6 +2,26 @@
   "name": "alphasquared.js",
   "module": "src/index.ts",
   "version": "0.0.1-rc.1",
+  "description": "A lightweight client for AlphaSquared",
+  "keywords": [
+    "alphasquared",
+    "dca",
+    "ddca",
+    "btc",
+    "bitcoin",
+    "eth",
+    "ethereum",
+    "dollar cost averaging",
+    "trading",
+    "crypto",
+    "cryptocurrency"
+  ],
+  "repository": "https://github.com/ShaunLWM/alphasquared.js.git",
+  "author": "ShaunLWM",
+  "files": [
+    "dist/*"
+  ],
+  "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
