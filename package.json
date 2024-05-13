@@ -1,8 +1,23 @@
 {
   "name": "alphasquared.js",
-  "module": "src/index.ts",
   "version": "0.0.1-rc.2",
+  "author": "ShaunLWM",
+  "repository": "https://github.com/ShaunLWM/alphasquared.js.git",
+  "main": "./dist/index.js",
+  "module": "src/index.ts",
+  "devDependencies": {
+    "@types/bun": "^1.1.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
   "description": "A lightweight client for AlphaSquared",
+  "files": [
+    "dist/*"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "keywords": [
     "alphasquared",
     "dca",
@@ -16,27 +31,12 @@
     "crypto",
     "cryptocurrency"
   ],
-  "repository": "https://github.com/ShaunLWM/alphasquared.js.git",
-  "author": "ShaunLWM",
-  "files": [
-    "dist/*"
-  ],
   "license": "MIT",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "scripts": {
     "prepublishOnly": "rm -rf dist && bun run build",
     "build": "bun build ./src/index.ts --outdir ./dist && bun run build:declaration",
     "build:declaration": "tsc --emitDeclarationOnly --project tsconfig.json"
   },
   "type": "module",
-  "devDependencies": {
-    "@types/bun": "^1.1.2"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "axios": "^1.6.8"
-  }
+  "types": "./dist/index.d.ts"
 }
