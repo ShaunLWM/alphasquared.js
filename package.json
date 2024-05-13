@@ -1,0 +1,22 @@
+{
+  "name": "alphasquared.js",
+  "module": "src/index.ts",
+  "version": "0.0.1-rc.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "rm -rf dist && bun run build",
+    "build": "bun build ./src/index.ts --outdir ./dist && bun run build:declaration",
+    "build:declaration": "tsc --emitDeclarationOnly --project tsconfig.json"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "^1.1.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
