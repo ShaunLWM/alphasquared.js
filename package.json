@@ -1,6 +1,6 @@
 {
   "name": "alphasquared.js",
-  "version": "0.0.1-rc.2",
+  "version": "0.0.1-rc.3",
   "author": "ShaunLWM",
   "repository": "https://github.com/ShaunLWM/alphasquared.js.git",
   "main": "./dist/index.js",
